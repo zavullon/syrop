@@ -11,6 +11,9 @@ logger = logging.getLogger(__name__)
 
 db = commands.db
 
+def has_numbers(x):
+    return any(char.isdigit() for char in x)
+
 def is_question(x):
     if x[-1] == '?':
         return True
