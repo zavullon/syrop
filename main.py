@@ -62,7 +62,7 @@ def main():
     updater.start_polling sends a request for telegram server to listen on events (long polling)
     """
     db.setup()
-    updater = Updater("960888759:AAECyatQetOLUPB660SEJfvc8LUdOUffS4A", use_context=True)
+    updater = Updater("", use_context=True)
     dp = updater.dispatcher
     dp.add_handler(CommandHandler('start', commands.start))
     dp.add_handler(CommandHandler('showitems', commands.show_items))
