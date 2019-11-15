@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Welcome to syrop’s documentation! &#8212; syrop 0.0.1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="welcome-to-syrop-s-documentation">
+<h1>Welcome to syrop’s documentation!<a class="headerlink" href="#welcome-to-syrop-s-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+<div class="section" id="module-main">
+<span id="syrop-main"></span><h1>syrop main<a class="headerlink" href="#module-main" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="main.add_item">
+<code class="sig-prename descclassname">main.</code><code class="sig-name descname">add_item</code><span class="sig-paren">(</span><em class="sig-param">update</em>, <em class="sig-param">context</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/main.html#add_item"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#main.add_item" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>update</strong> – telegram.Update</p></li>
+<li><p><strong>context</strong> – telegram.Context</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="main.error">
+<code class="sig-prename descclassname">main.</code><code class="sig-name descname">error</code><span class="sig-paren">(</span><em class="sig-param">update</em>, <em class="sig-param">context</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/main.html#error"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#main.error" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>update</strong> – telegram.Update</p></li>
+<li><p><strong>context</strong> – telegram.Context</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="main.is_polynom">
+<code class="sig-prename descclassname">main.</code><code class="sig-name descname">is_polynom</code><span class="sig-paren">(</span><em class="sig-param">x</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/main.html#is_polynom"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#main.is_polynom" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>x</strong> – type string</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>True if x is polynom and False if it’s not</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="main.main">
+<code class="sig-prename descclassname">main.</code><code class="sig-name descname">main</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/main.html#main"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#main.main" title="Permalink to this definition">¶</a></dt>
+<dd><p>main part of the code
+updater.start_polling sends a request for telegram server to listen on events (long polling)</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-dbhelper">
+<span id="syrop-dbhelper"></span><h1>syrop dbhelper<a class="headerlink" href="#module-dbhelper" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="dbhelper.DBHelper">
+<em class="property">class </em><code class="sig-prename descclassname">dbhelper.</code><code class="sig-name descname">DBHelper</code><span class="sig-paren">(</span><em class="sig-param">dbname='todo.sqlite'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/dbhelper.html#DBHelper"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dbhelper.DBHelper" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="dbhelper.DBHelper.add_item">
+<code class="sig-name descname">add_item</code><span class="sig-paren">(</span><em class="sig-param">item_text</em>, <em class="sig-param">owner</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/dbhelper.html#DBHelper.add_item"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dbhelper.DBHelper.add_item" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>item_text</strong> – what does our user want to do</p></li>
+<li><p><strong>owner</strong> – id of the chat</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbhelper.DBHelper.delete_item">
+<code class="sig-name descname">delete_item</code><span class="sig-paren">(</span><em class="sig-param">item_text</em>, <em class="sig-param">owner</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/dbhelper.html#DBHelper.delete_item"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dbhelper.DBHelper.delete_item" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>item_text</strong> – what does our user want to do</p></li>
+<li><p><strong>owner</strong> – id of the chat</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbhelper.DBHelper.get_items">
+<code class="sig-name descname">get_items</code><span class="sig-paren">(</span><em class="sig-param">owner</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/dbhelper.html#DBHelper.get_items"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dbhelper.DBHelper.get_items" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>owner</strong> – id of the chat</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>list of all the things our user wants to do</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="dbhelper.DBHelper.setup">
+<code class="sig-name descname">setup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/dbhelper.html#DBHelper.setup"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#dbhelper.DBHelper.setup" title="Permalink to this definition">¶</a></dt>
+<dd><p>this functions sets up out database, you should use it before calling any other methods</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-commands">
+<span id="syrop-commands"></span><h1>syrop commands<a class="headerlink" href="#module-commands" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="commands.show_items">
+<code class="sig-prename descclassname">commands.</code><code class="sig-name descname">show_items</code><span class="sig-paren">(</span><em class="sig-param">update</em>, <em class="sig-param">context</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/commands.html#show_items"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#commands.show_items" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>update</strong> – telegram.Update</p></li>
+<li><p><strong>context</strong> – telegram.Context</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="commands.start">
+<code class="sig-prename descclassname">commands.</code><code class="sig-name descname">start</code><span class="sig-paren">(</span><em class="sig-param">update</em>, <em class="sig-param">context</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/commands.html#start"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#commands.start" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>update</strong> – telegram.Update</p></li>
+<li><p><strong>context</strong> – telegram.Context</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">syrop</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, shecolda.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
